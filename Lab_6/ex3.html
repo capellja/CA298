@@ -1,0 +1,30 @@
+<html>
+	<head>
+	</head>
+	<body>
+        <form id="myform">
+            <label for="form-username-input">Your name</label>
+            <input type="text" name="form-username-input" id="name-input" placeholder="Your name here">
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+
+            function formValidator(event){
+                event.preventDefault(); // always prevent default events when using javascript
+                // get the value the in the username box 
+                let username = document.getElementById("name-input").value; 
+                if( username == ""){
+                    alert("Username cannot be null");
+                }
+                else{
+                    let createGreeting = document.createElement("p"); // returns the specific DOM node , the P tag with id="myparagraphid"
+                    createGreeting.innerHTML="Hello" + " " + username;
+                    document.body.appendChild(createGreeting)
+                }
+            }
+
+            let myform = document.getElementById("myform"); // get the form 
+            myform.addEventListener('submit', formValidator); // bind the validator function to the submit button for the form
+        </script>
+	</body>
+</html>

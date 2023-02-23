@@ -1,0 +1,25 @@
+<html>
+    <head>
+    </head>
+    <body>
+
+        <img id="myImg" src="">
+        <button id="newImage">Fun</button>
+
+        <script>
+            function genImage() {
+                fetch('https://dog.ceo/api/breeds/image/random')
+                .then(response => response.json())
+                .then(dog => {
+                    let dogURL = dog.message;
+                    document.getElementById("myImg").src = dogURL;
+            });
+
+            }
+
+            let myButton = document.getElementById("newImage");
+            myButton.addEventListener('click', genImage);
+        
+        </script>
+    </body>
+</html>

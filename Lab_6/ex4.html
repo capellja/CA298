@@ -1,0 +1,44 @@
+<html>
+	<head>
+	</head>
+	<body>
+        <form id="myform">
+            <label for="form-username-input">Add these Numbers</label>
+            <input type="text" name="form-username-input" id="input1" placeholder="First Number">
+            <input type="text" name="form-username-input" id="input2" placeholder="Second Number">
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+
+            function formValidator(event){
+                event.preventDefault(); // always prevent default events when using javascript
+                // get the value the in the username box 
+                let first = document.getElementById("input1").value; 
+                let second = document.getElementById("input2").value; 
+                if( first == ""){
+                    alert("first cannot be null");
+                }
+                else if (second == ""){
+                    alert("second cannot be null");
+                }
+                else if (isNaN(first)){
+                    alert("First number is not a Number");
+                }
+                else if (isNaN(second)){
+                    alert("Second number is not a Number");
+                }
+                else{
+                    let showSum = document.createElement("p"); // returns the specific DOM node , the P tag with id="myparagraphid"
+                    parsed1 = parseInt(first);
+                    parsed2 = parseInt(second);
+                    sum = parsed1 + parsed2
+                    showSum.innerHTML= sum;
+                    document.body.appendChild(showSum)
+                }
+            }
+
+            let myform = document.getElementById("myform"); // get the form 
+            myform.addEventListener('submit', formValidator); // bind the validator function to the submit button for the form
+        </script>
+	</body>
+</html>

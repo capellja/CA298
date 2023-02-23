@@ -1,0 +1,21 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<p id="myparagraphid">Paragraph with identifier</p>
+        <button id="mybutton"> Change Color </button>
+
+		<script>
+            let specificPTag = document.getElementById("myparagraphid"); // returns the specific DOM node , the P tag with id="myparagraphid"
+            specificPTag.innerHTML="Hello from Javascript";
+
+            function changeColor(){
+                specificPTag.style.color = "red";
+            ;
+            }
+            let myButton = document.getElementById("mybutton"); // select the button
+            myButton.addEventListener('click', changeColor);
+
+		</script>
+	</body>
+</html>

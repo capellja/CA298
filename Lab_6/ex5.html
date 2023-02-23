@@ -1,0 +1,11 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            fetch('https://swapi.dev/api/planets/1')
+            .then(response => response.json())
+            .then(planet => console.log(planet.name, planet.terrain, planet.diameter, planet.population, planet.climate))
+        </script>
+    </body>
+</html>
