@@ -1,0 +1,55 @@
+  .card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    width: 20rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.navbar{
+  min-height: 120px;
+  margin-bottom: 0px;
+}
+
+.c-item {
+  height: 550px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.overview {
+  height: 100px;
+  background-color: rgb(190, 190, 190);
+}
+
+.mainimg {
+  display: block;
+  max-width: 10%;
+  height: auto;
+}
+
+body {
+  background-color: rgb(236, 236, 236);
+}
+
+.footertext{
+  font-size: small;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.pizzainfo{
+  line-height: 200%;
+}
+
+a {
+  color: white;
+}
+
+footer {
+  box-shadow: 0 50vh 0 50vh #212529;
+}

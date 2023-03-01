@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="progress mx-5">
+  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<form action="" method="POST">    
+<section id="content">
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title mx-2 mb-4">Select Ingredients</h2>
+        {% csrf_token %}
+        {{ pizzaform.as_p }}
+        <button type="submit" class="btn btn-success px-4 py-2 fs-5 mt-2">Order</button></a>
+    </div>
+</div>
+</section>
+</form>
+  
+  </body>
+  </html>
+  
+
+{% endblock %}

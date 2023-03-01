@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+  
+<div id="hero-carousel" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="hero-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="hero-carousel" data-slide-to="1"></li>
+    <li data-target="hero-carousel" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item">
+      <img class="d-block w-100" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100 c-img" alt="First slide">
+      <div class="carousel-caption top-0 mt-04">
+        <p class = "fs-3 mt-5 text-uppercase">Discover the taste of Italy</p>
+        <h1 class="display-1 fw-bolder text-capitalise">Create your own Pizza</h1>
+        <a href="http://127.0.0.1:8000/pizza" <button type="button" class="btn btn-success px-4 py-2 fs-5 mt-5">Get Started</button></a>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img class="d-block w-100" src="https://images.unsplash.com/photo-1526367790999-0150786686a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" class="d-block w-100 c-img" alt="Second slide">
+      <div class="carousel-caption top-0 mt-04">
+        <p class = "fs-3 mt-5 text-uppercase">Can't go out?</p>
+        <h1 class="display-1 fw-bolder text-capitalise">Straight to your Doorstep</h1>
+        <a href="http://127.0.0.1:8000/pizza" <button type="button" class="btn btn-success px-4 py-2 fs-5 mt-5">Order</button></a>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img class="d-block w-100" src="https://images.unsplash.com/photo-1542834369-f10ebf06d3e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100 c-img" alt="Third slide" >
+      <div class="carousel-caption top-0 mt-04">
+        <p class = "fs-3 mt-5 text-uppercase">Authentic freshness</p>
+        <h1 class="display-1 fw-bolder text-capitalise">Locally sourced ingredients</h1>
+        <a href="http://127.0.0.1:8000/pizza" <button type="button" class="btn btn-success px-4 py-2 fs-5 mt-5">Find Out</button></a>
+      </div>
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#hero-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="sr-only"></span>
+  </a>
+  <a class="carousel-control-next" href="#hero-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="sr-only"></span>
+  </a>
+
+</div>
+
+<section id="faq" class="py-md-5">
+  <a id="faqanchor"></a>
+  <h2 class="text-center">FAQ</h2>
+
+
+  <div class="container">
+    <div class="accordion w-75 mx-auto" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            How do I make a pizza?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This website is all you need.</strong> Follow the easy steps and create your own pizza. They way you want it! Provide your details and your pizza will be with you soon.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How does delivery work?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Your pizza will arrive at your doorstep in 1 hour or less!</strong> We pride ourselves in our quick turnaround, to provide quality pizzas in the shortests of times. When you're hungry, you're HUNGRY. We understand!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+           Where do you source ingredients? 
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Local is the way to go!</strong> Despite being 2,500km away from the heart of Italy, we aim to replicate the genuine quality of Italian products through our very own local sources.
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+</main>
+
+{% endblock %}
+

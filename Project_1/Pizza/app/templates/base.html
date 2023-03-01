@@ -1,0 +1,94 @@
+<!-- static css --> 
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  {% block title %}<title>Pizza Time</title>{% endblock %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="{% static 'css.css' %}">
+
+
+</head>
+
+<!-- nav bar --> 
+{% block navbar %}	
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container">
+
+    <img class="mainimg" src="https://cdn-icons-png.flaticon.com/512/3143/3143279.png" class="img-fluid" alt="pizza" href="http://127.0.0.1:8000/">
+    <a class="navbar-brand text-uppercase" href="http://127.0.0.1:8000/">PIZZA TIME</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-item nav-link active" href="http://127.0.0.1:8000/pizza">Order <span class="sr-only"></span></a>
+        <a class="nav-item nav-link" href="http://127.0.0.1:8000/#faqanchor">FAQ</a>
+
+    </div>
+      
+  </div>
+</nav>
+{% endblock %}
+
+<!-- banner --> 
+<section class="overview">
+  <div class="container h-100 d-flex align-items-center">
+    <div class="row w-100 text-center fs-4">
+      <div class="col">
+        <i class="bi bi-truck me-2"></i>
+        Fastest Delivery
+      </div>
+      <div class="col">
+        <i class="bi bi-award me-2"></i>
+        Ireland's #1 Pizza
+      </div>
+</section>
+
+{% block content %}
+
+{% endblock %}
+
+<!-- footer --> 
+
+<footer class ="bg-dark py-5">
+  <div class="container h-100 d-flex align-items-center text-light">
+    <div class="row w-100 text-center fs-4">
+      <div class="col">
+        Contact
+        <ul class="footertext">
+          <li> Phone : (01) 827 2288 </li>
+        </ul>
+      </div>
+      <div class="col">
+        <a href="https://www.instagram.com/papajohns/"><i class="bi bi-instagram"></a></i>
+        <a href="https://www.facebook.com/PapaJohnsJordan"><i class="bi bi-facebook"></a></i>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="bi bi-youtube"></a></i>
+
+
+
+      </div>
+      
+      <div class="col">
+        Other
+        <ul class="footertext">
+          <a href="https://bigmariosnewyorkpizza.com/blog/why-pizza-is-the-best-food"><li>Why Pizza is the Best Food</li></a>
+          
+        </ul>
+      </div>
+      <small class="text-white-50">&copy; Copyright by James Capellan>
+
+</footer>

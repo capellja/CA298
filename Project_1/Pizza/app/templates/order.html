@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="alert alert-success">
+    <strong>Order complete!</strong> Your pizza will be with you shortly. Enjoy!
+  </div>
+
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title mb-4">Order Details</h2>
+        {% csrf_token %}
+            
+        <ul class = pizzainfo>
+            <li>Name : {{customer.name}}</li>
+            <li>Street : {{customer.street}}</li>
+            <li>Town : {{customer.town}}</li>
+            <li>Postcode : {{customer.postcode}}</li>
+
+            <br>
+            <h5 style="font-weight: lighter"> Your Pizza</h5>
+            <li>Size : {{pizza.size}}</li>
+            <li>Crust : {{pizza.crust}}</li>
+            <li>Sauce : {{pizza.sauce}}</li>
+            <li>Cheese : {{pizza.cheese}}</li>
+            <br>
+            <h5 style="font-weight: lighter"> Extras </h5>
+            {% if pizza.pepperoni is True %}
+                <li>Pepperoni</li>
+                {% endif %}
+
+            {% if pizza.chicken is True %}
+                <li>Chicken</li>
+                {% endif %}
+
+            {% if pizza.ham is True %}
+                <li>Ham</li>
+                {% endif %}
+
+            {% if pizza.pineapple is True %}
+                <li>Pineapple</li>
+                {% endif %}
+
+            {% if pizza.peppers is True %}
+                <li>Peppers</li>
+                {% endif %}
+
+            {% if pizza.mushrooms is True %}
+                <li>Mushrooms</li>
+                {% endif %}
+
+            {% if pizza.onions is True %}
+                <li>Onions</li>
+                {% endif %}
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

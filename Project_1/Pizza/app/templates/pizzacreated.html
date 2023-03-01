@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="progress mx-5">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title mb-4">Ingredients Selected</h2>
+        {% csrf_token %}
+            
+        <ul class = pizzainfo>
+            <li>Size : {{pizzacreated.size}}</li>
+            <li>Crust : {{pizzacreated.crust}}</li>
+            <li>Sauce : {{pizzacreated.sauce}}</li>
+            <li>Cheese : {{pizzacreated.cheese}}</li>
+            <br>
+            <h5 style="font-weight: lighter"> Extras </h5>
+            {% if pizzacreated.pepperoni is True %}
+                <li>Pepperoni</li>
+                {% endif %}
+
+            {% if pizzacreated.chicken is True %}
+                <li>Chicken</li>
+                {% endif %}
+
+            {% if pizzacreated.ham is True %}
+                <li>Ham</li>
+                {% endif %}
+
+            {% if pizzacreated.pineapple is True %}
+                <li>Pineapple</li>
+                {% endif %}
+
+            {% if pizzacreated.peppers is True %}
+                <li>Peppers</li>
+                {% endif %}
+
+            {% if pizzacreated.mushrooms is True %}
+                <li>Mushrooms</li>
+                {% endif %}
+
+            {% if pizzacreated.onions is True %}
+                <li>Onions</li>
+                {% endif %}
+
+        </ul>
+        <a href="http://127.0.0.1:8000/customer" type="submit" class="btn btn-success px-4 py-2 fs-5 mt-2">Confirm</button></a>
+        <a href="http://127.0.0.1:8000/pizza" type="submit" class="btn btn-danger px-4 py-2 fs-5 mt-2">Remake</button></a>
+
+    </div>
+</div>
+
+{% endblock %}
