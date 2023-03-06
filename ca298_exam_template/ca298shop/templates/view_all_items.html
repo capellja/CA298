@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for b in item %}
+<section id="content">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title mx-2 mb-4"><a href="/items/{{b.id}}">{{b.name}}</a></h2>
+            <ul> Description {{b.description}} </ul>
+            <ul> Colour: {{b.colour}} </ul>
+            <ul> Type: {{b.type}} </ul>
+            <ul> Size: <a href="/items/{{b.size}}">{{b.size}}</a> </ul>
+            <ul> Price: {{b.price}} </ul>
+
+        </div>
+    </div>
+    </section>
+
+{% endfor %}
+
+{% endblock %}
