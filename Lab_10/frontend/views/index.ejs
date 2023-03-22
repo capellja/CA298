@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+		<div id="container"></div>
+
+    <form id="form", onsubmit="myForm()">
+      enter title : <input type="text" name="title">
+      <br>
+      enter author : <input type="text" name="author">
+      <br>
+      enter genre : <input type="text" name="genre">
+      <br>
+      enter year : <input type="number" name="year">
+      <br>
+      enter inventory : <input type="number" name="inventory">
+      <br>
+
+      <button type="submit">Create new book</button>
+    </form>
+    <script>
+
+      function ShowAllBooks(){
+        let container = document.getElementById("container"); // load the container
+				container.innerHTML = ""; // delete the content already inside the container
+        let req = "http://127.0.0.1:8000/api/books/"
+        fetch(req) // make a request to this endpoint
+          .then(response => response.json()) // with our response, get the json data returned
+          .then(data =>{
+            container.innerHTML+=`<ol id="book-list"></ol>`; // create an empty list 
+						data.forEach(elem=>{
+              let bookList = document.getElementById("book-list"); // load the book lsit we just created
+							let bookString = `<li>${elem.title} - ${elem.author}</li>
+              <button onclick="ViewSingleBook(${elem.id})">View</button>`;
+
+							bookList.innerHTML += bookString; // add the li element to the list of books
+            })
+          })
+      }
+
+      function ViewSingleBook(bookId) {
+        let container = document.getElementById("container");
+        container.innerHTML = "";
+        let req = "http://127.0.0.1:8000/api/books/" + bookId + "/";
+        fetch(req) // make a request to this endpoint
+          .then(response => response.json()) // with our response, get the json data returned
+          .then(data =>{
+              let bookTitle = `${data.title}`; // create a new li element containing info on our book
+              let bookString =
+              `${data.title}
+              <li>${data.id}</li>
+              <li>Author : ${data.author}</li>
+              <li>Genre :${data.genre}</li> 
+              <li>Release : ${data.year}</li>
+              <li>Inventory : ${data.inventory}</li>
+              <button onclick="ShowAllBooks()">Home</button>`;
+
+            container.innerHTML += bookString; // add the li element to the list of books
+            })
+      }
+    
+      /*
+    let form = document.getElementById("form");
+    form.addEventListener("submit", (event)=>{
+	    event.preventDefault();	
+
+      let formData = new FormData(form);
+      let formDataObject = Object.fromEntries(formData.entries());
+
+      fetch("http://127.0.0.1:8000/api/books/", {
+      method: 'POST',
+      body: JSON.stringify(formDataObject),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+
+      })
+          
+    });
+    
+    */
+    
+      function myForm() {
+        event.preventDefault(); // prevent form submission
+
+        let formData = new FormData(form);
+        let formDataObject = Object.fromEntries(formData.entries());
+        
+        fetch("http://127.0.0.1:8000/api/books/", {
+          method: 'POST',
+          body: JSON.stringify(formDataObject),
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(response => {
+          if (response.ok) {
+            alert('Form submitted successfully');
+            window.location.reload();
+
+          } else {
+            alert('Form not submitted / empty or missing args');
+          }
+        })
+        .catch(error => {
+          //handle network or other error
+          console.error('Error;', error);
+        });
+      }
+
+      ShowAllBooks();// call the function  
+
+
+    </script>
+  </body>
+</html>

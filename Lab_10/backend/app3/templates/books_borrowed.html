@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}
+<h1>Customer Information</h1>
+
+{% endblock %}
+
+{% block content %}
+<a href="/books">Return to All Books</a><br><br>
+
+<body>
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{ name }}</h5>
+        <ul>
+        <p class="card-text">
+          Customer ID : {{ id }}
+
+            <h3>Borrowed</h3>
+            {% for b in borrowed %}
+              <li><h5 class="card-title"><a href="/books/{{b.id}}">{{b.Book.title}} </a>
+              </h5>Due - {{ b.due_date }} </li>
+            
+              {% endfor %}
+            
+            </ul>
+            
+<ul>
+    <h3>Returned</h3>
+    {% for b in returned %}
+      <li><h5 class="card-title"><a href="/books/{{b.Book.id}}">{{b.Book.title}} </a>
+      </h5>Due - {{ b.due_date }}<br><br> </li>
+    
+      {% endfor %}
+    
+    </ul>
+          <br>
+          </p>
+        </ul>
+  
+    </div>
+    </div>
+
+  <!-- content specific to this page goes here --> 
+{% endblock %}
