@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}
+    <div style="text-transform: capitalize;text-transform:capitalize;"><h1>{{ title }}</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+<a href="/books">Return to All Books</a><br>
+
+<body>
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <ul>
+        <p class="card-text"></p><h6>Author : {{book.author}}</h6>
+          Release : {{book.year}}
+          <br>
+          Stock : {{book.inventory}} left
+          <br>
+          ID : {{book.id}}
+          </p>
+          <a href="/books/genre/{{book.genre}}" class="btn btn-primary"><div style="text-transform: capitalize;text-transform:capitalize;">{{ book.genre }}{{b.genre}}</div></a>
+        </ul>
+  
+    </div>
+    </div>
+
+    <br><br>
+
+    <h3>Currently borrowed By :</h3>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title"><a href="/books/{{b.id}}">{{b.title}}</a></h5>
+            <p class="card-text"></p><h6>{{b.author}}</h6>
+            <ul>
+                {% for borrow in borrowings %}
+                  <li>Name - <a href="/customer/{{borrow.Customer.id}}">{{ borrow.Customer.name }}</a> <br> Due - {{ borrow.due_date }} <br> Customer ID - {{borrow.Customer.id}}</li>
+                <br>
+                  {% endfor %}
+                
+                </ul>
+            </p>
+      
+        </div>
+        </div>
+
+  <!-- content specific to this page goes here --> 
+{% endblock %}
