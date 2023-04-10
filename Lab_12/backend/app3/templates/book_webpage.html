@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}
+<div style="text-transform: capitalize;text-transform:capitalize;"><h1>{{ title }}</h1>
+<h1>{{ genre }}</h1></div>
+{% endblock %}
+
+{% block content %}
+<a href="/books">Return to All Books</a><br>
+
+{% for b in book %}
+<body>
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title"><a href="/books/{{b.id}}">{{b.title}}</a></h5>
+        <p class="card-text"></p><h6>{{b.author}}</h6>
+          Release : {{b.year}}
+          <br>
+          Stock : {{b.inventory}} left
+          <br>
+        </p>
+  
+    </div>
+    </div>
+
+{% endfor %}
+
+{% endblock %}
