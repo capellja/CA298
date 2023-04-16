@@ -8,7 +8,6 @@ import BookList from './components/booklist';
 import SingleBook from './components/singlebook';
 
 
-
 function App() {
   return (
     <div className="App">
