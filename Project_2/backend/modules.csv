@@ -1,0 +1,119 @@
+﻿Course,CTitle,Year,Code,Title,Credit,Semester,Exam,CA,Resit Category
+COMSCI,Computer Science,1,CA103,Computer Systems,5,Semester 1,0,100,1
+COMSCI,Computer Science,1,CA106,Web Design,5,Semester 1,0,100,1
+COMSCI,Computer Science,1,CA115,Digital Innovation Management & Enterprise,5,Semester 2,0,100,2
+COMSCI,Computer Science,1,CA116,Computing Programming I,10,Semester 1,40,60,1
+COMSCI,Computer Science,1,CA117,Computing Programming II,10,Semester 2,50,50,1
+COMSCI,Computer Science,1,CA169,Networks & Internet,5,Semester 2,50,50,1
+COMSCI,Computer Science,1,CA170,Introduction to Operating Systems,5,Semester 2,0,100,1
+COMSCI,Computer Science,1,CA172,"Problem-solving,Creativity& Critical Thinking",5,Semester 1,0,100,1
+COMSCI,Computer Science,1,MS134,IT Mathematics I,5,Semester 1,80,20,3
+COMSCI,Computer Science,1,MS135,IT Mathematics II,5,Semester 2,80,20,3
+COMSCI,Computer Science,2,CA208,Logic,5,Semester 2,50,50,1
+COMSCI,Computer Science,2,CA214,Systems Analysis,5,Semester 1,0,100,1
+COMSCI,Computer Science,2,CA216,Operating Systems,5,Semester 2,70,30,1
+COMSCI,Computer Science,2,CA218,Introduction to Databases,5,Semester 2,,100,1
+COMSCI,Computer Science,2,CA266,Probability & Statistics,5,Semester 1,80,20,1
+COMSCI,Computer Science,2,CA267,Software Testing,5,Semester 2,,100,1
+COMSCI,Computer Science,2,CA268,Computer Programming 3 (Data Struct. & Alg.),5,Semester 1,70,30,1
+COMSCI,Computer Science,2,CA269,Computer Programming 4 (Object Oriented Prog),5,Semester 2,70,30,1
+COMSCI,Computer Science,2,CA282,Introduction to DevOps,5,Semester 1,0,100,2
+COMSCI,Computer Science,2,CA284,Systems Programming,5,Semester 1,0,100,1
+COMSCI,Computer Science,2,CA298,Full Stack Development,5,Semester 2,0,100,2
+COMSCI,Computer Science,2,MS200,Linear Algebra,5,Semester 1,80,20,3
+COMSCI,Computer Science,3,CA304,Computer Networks 2,5,Semester 1,75,25,1
+COMSCI,Computer Science,3,CA3109,Machine Learning,5,Semester 2,,100,1
+COMSCI,Computer Science,3,CA314,OO Analysis and Design,5,Semester 1,75,25,1
+COMSCI,Computer Science,3,CA318,Advanced Algorithms and A.I. Search,5,Semester 1,75,25,1
+COMSCI,Computer Science,3,CA320,Computability and Complexity,5,Semester 1,75,25,1
+COMSCI,Computer Science,3,CA326,Year 3 Project,15,Semester 2,0,100,2
+COMSCI,Computer Science,3,CA341,Comparative Programming Languages,5,Semester 1,0,100,1
+COMSCI,Computer Science,3,CA357,User Interface Design and Implementation,5,Semester 1,0,100,2
+COMSCI,Computer Science,3,CA360,Communication Skills,5,Semester 2,0,100,2
+COMSCI,Computer Science,3,CA361,IT Architecture,5,Semester 2,0,100,1
+COMSCI,Computer Science,3,CA366,INTRA,10,Semester 2,0,100,2
+COMSCI,Computer Science,3,CA369,SEMESTER ONE ABROAD,30,Semester 1,0,100,2
+COMSCI,Computer Science,4,CA400,Project,15,Year long,0,100,2
+COMSCI,Computer Science,4,CA4003,Compiler Construction,7.5,Semester 1,70,30,1
+COMSCI,Computer Science,4,CA4004,"Soft. Eng.:Process,Principles & Methods (C)",7.5,Semester 2,0,100,1
+COMSCI,Computer Science,4,CA4005,Cryptography and Security Protocols,7.5,Semester 1,70,30,1
+COMSCI,Computer Science,4,CA4006,Concurrent and Distributed Programming,7.5,Semester 2,50,50,1
+COMSCI,Computer Science,4,CA4007,Computer Graphics and Image Processing,7.5,Semester 2,70,30,1
+COMSCI,Computer Science,4,CA4009,Search Technologies,7.5,Semester 1,70,30,1
+COMSCI,Computer Science,4,CA4010,Data Warehousing & Data Mining,7.5,Semester 1,75,25,3
+COMSCI,Computer Science,4,CA4012,Machine Translation,7.5,Semester 2,70,30,1
+COMSCI,Computer Science,4,UM405,Uaneen Non-Contributing Module,5,Year long,0,100,1
+COMBUS,Computing for Business,1,CA106,Web Design,5,Semester 1,0,100,1
+COMBUS,Computing for Business,1,CA112,Introduction to Computer Hardware,5,Semester 1,0,100,1
+COMBUS,Computing for Business,1,CA113,Business Applications,5,Semester 2,0,100,2
+COMBUS,Computing for Business,1,CA114,Managing Enterprise Computer Systems,5,Semester 2,50,50,1
+COMBUS,Computing for Business,1,CA115,Digital Innovation Management & Enterprise,5,Semester 2,0,100,2
+COMBUS,Computing for Business,1,CA120,Collaboration and Innovation,5,Semester 1,0,100,1
+COMBUS,Computing for Business,1,CA121,Data Analysis and Visualisation,5,Semester 2,0,100,1
+COMBUS,Computing for Business,1,CA168,Digital World,5,Semester 1,0,100,1
+COMBUS,Computing for Business,1,CA169,Networks & Internet,5,Semester 2,50,50,1
+COMBUS,Computing for Business,1,CA172,"Problem-solving,Creativity& Critical Thinking",5,Semester 1,0,100,1
+COMBUS,Computing for Business,1,CA177,Programming Fundamentals,5,Semester 2,50,50,1
+COMBUS,Computing for Business,1,MS115,Mathematics for Enterprise Computing,5,Semester 1,80,20,3
+COMBUS,Computing for Business,2,CA2028,Business Systems Analysis,5,Semester 2,0,100,1
+COMBUS,Computing for Business,2,CA2049,Enterprise Computer Systems Configuration,5,Semester 2,0,100,1
+COMBUS,Computing for Business,2,CA2106,Advanced Web Design,5,Semester 1,0,100,1
+COMBUS,Computing for Business,2,CA214,Systems Analysis,5,Semester 1,0,100,1
+COMBUS,Computing for Business,2,CA222,Enterprise Information Systems,5,Semester 1,0,100,2
+COMBUS,Computing for Business,2,CA227,Business Database Management I,10,Year long,0,100,1
+COMBUS,Computing for Business,2,CA229,Developing Internet Applications,5,Semester 2,0,100,1
+COMBUS,Computing for Business,2,CA277,Programming Fundamentals II,5,Semester 1,50,50,1
+COMBUS,Computing for Business,2,CA278,Programming Fundamentals III,5,Semester 2,50,50,1
+COMBUS,Computing for Business,2,CA279,Professional Practice for Enterprise Comp.,5,Semester 2,0,100,1
+COMBUS,Computing for Business,2,CA292,Project Management,5,Semester 1,0,100,1
+COMBUS,Computing for Business,3,CA329,Intra,30,Semester 2,0,100,2
+COMBUS,Computing for Business,3,CA3000,Quantitive Analysis for Business Decisions,5,Semester 1,75,25,3
+COMBUS,Computing for Business,3,CA348,Business Information Management,5,Semester 1,0,100,1
+COMBUS,Computing for Business,3,CA349,IT Architecture,5,Semester 1,0,100,1
+COMBUS,Computing for Business,3,CA357,User Interface Design and Implementation,5,Semester 1,0,100,2
+COMBUS,Computing for Business,3,CA358,Fundamentals of Software Testing,5,Semester 1,0,100,1
+COMBUS,Computing for Business,3,CA369,SEMESTER ONE ABROAD,30,Semester 1,0,100,2
+COMBUS,Computing for Business,3,CA377,Programming Fundamentals (Project),5,Semester 1,0,100,1
+COMBUS,Computing for Business,4,CA4004,"Soft. Eng.:Process,Principles & Methods (C)",7.5,Semester 2,0,100,1
+COMBUS,Computing for Business,4,CA4094,App Development,7.5,Semester 1,0,100,1
+COMBUS,Computing for Business,4,CA4101,Enterprise Architecture (C),7.5,Semester 2,70,30,1
+COMBUS,Computing for Business,4,CA4102,High-Tech. Innovation & Entrepreneurship (C),7.5,Semester 1,0,100,2
+COMBUS,Computing for Business,4,CA472,Enterprise Computing Team Project,15,Year long,0,100,2
+COMBUS,Computing for Business,4,CA4009,Search Technologies,7.5,Semester 1,70,30,1
+COMBUS,Computing for Business,4,CA4017,Internet of Things Management,7.5,Semester 2,75,25,1
+COMBUS,Computing for Business,4,CA4108,Topics in Innovative Technologies,7.5,Semester 1,0,100,1
+COMBUS,Computing for Business,4,CA4109,Machine Learning,7.5,Semester 2,,100,1
+COMBUS,Computing for Business,4,UM405,Uaneen Non-Contributing Module,5,Year long,0,100,1
+DS,Data Science,1,CA103,Computer Systems,5,Semester 1,0,100,1
+DS,Data Science,1,CA116,Computing Programming I,10,Semester 1,40,60,1
+DS,Data Science,1,CA117,Computing Programming II,10,Semester 2,50,50,1
+DS,Data Science,1,CA119,Data Science and Databases,5,Semester 1,80,20,1
+DS,Data Science,1,CA176,Introduction to R,5,Semester 2,50,50,1
+DS,Data Science,1,MS103,Linear Mathematics I,5,Semester 1,80,20,3
+DS,Data Science,1,MS104,Linear Mathematics II,5,Semester 2,80,20,3
+DS,Data Science,1,MS117,Probability 1,5,Semester 2,60,40,1
+DS,Data Science,1,MS146,Calculus and its Applications,10,Year long,0,100,1
+DS,Data Science,2,CA229,Developing Internet Applications,5,Semester 2,0,100,1
+DS,Data Science,2,CA268,Computer Programming 3 (Data Struct. & Alg.),5,Semester 1,70,30,1
+DS,Data Science,2,CA269,Computer Programming 4 (Object Oriented Prog),5,Semester 2,70,30,1
+DS,Data Science,2,CA270,Data Warehousing and OLAP,5,Semester 1,80,20,1
+DS,Data Science,2,CA271A,Introduction to Machine Learning,7.5,Semester 2,,100,1
+DS,Data Science,2,CA273A,Data Processing and Visualisation,7.5,Semester 1,,100,1
+DS,Data Science,2,CA274,Programming for Data Analysis,5,Semester 2,0,100,1
+DS,Data Science,2,MS205,Calculus of Several Variables,5,Semester 1,80,20,3
+DS,Data Science,2,MS226,Statistics I,7.5,Semester 1,70,30,1
+DS,Data Science,2,MS228,Statistics II,7.5,Semester 2,70,30,1
+DS,Data Science,2,CA273,Data Processing and Visualisation,10,Semester 1,0,100,1
+DS,Data Science,3,CA336,Data Exploration Using Graph Theory,5,Semester 1,0,100,1
+DS,Data Science,3,CA337,Application Domains 1,7.5,Semester 1,0,100,1
+DS,Data Science,3,CA338,Intra,30,Semester 2,0,100,2
+DS,Data Science,3,CA339,Software Eng: Building Better Software,5,Semester 1,0,100,1
+DS,Data Science,3,CA375,Professional & Research Practice for Data Sci,5,Semester 1,0,100,1
+DS,Data Science,3,CA4009,Search Technologies,7.5,Semester 1,70,30,1
+DS,Data Science,4,CA4015,Advanced Machine Learning,7.5,Semester 1,0,100,1
+DS,Data Science,4,CA4016,Application Domains 2,7.5,Semester 1,0,100,1
+DS,Data Science,4,CA4021,Final Year Project,15,Year long,0,100,2
+DS,Data Science,4,CA4022,Data at Speed and Scale,7.5,Semester 1,0,100,1
+DS,Data Science,4,CA4023,Natural Language Technologies,7.5,Semester 2,60,40,1
+DS,Data Science,4,CA4024,Building Complex Computational Models,7.5,Semester 2,60,40,1
+DS,Data Science,4,CA4025,Application Domains 3,7.5,Semester 2,0,100,1
