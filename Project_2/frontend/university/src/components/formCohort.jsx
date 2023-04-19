@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 function FormCohort() {
   const [newCohort, setnewCohort] = useState({ id: "", year: "", degree: "", name: "" });

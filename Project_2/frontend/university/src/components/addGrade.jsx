@@ -3,7 +3,7 @@ import { useState }  from "react";
 
 function AddGrade () {
     const [newGrade, setnewGrade] = useState({module: "", ca_mark: "", exam_mark: "", cohort: "", total_grade:"", student:""});
-	  const [updated, setUpdated] = useState("");
+	  const [updated] = useState("");
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;   // extracts name, value from target object; fields below

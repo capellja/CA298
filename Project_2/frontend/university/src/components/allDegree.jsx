@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 function DegreeList() {
-    const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 	const [error, setError] = useState("");
 	const [loading, setLoading] = useState(false);
 
@@ -10,7 +9,7 @@ function DegreeList() {
 		setLoading(true);
 		async function fetchData () {
 			try {
-                const req = `http://127.0.0.1:8000/api/degree`;
+        const req = `http://127.0.0.1:8000/api/degree`;
 				const response = await fetch(req);
 				const data = await response.json();
 				setData(data);
