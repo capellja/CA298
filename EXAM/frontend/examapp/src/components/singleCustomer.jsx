@@ -68,7 +68,7 @@ function SingleCustomer() {
 			return <p>{error}</p>;
 		}
 
-		if (!data.length) {
+		if (!data.url) {
 			return <p>Category not Found</p>;
 		}
 
@@ -77,14 +77,11 @@ function SingleCustomer() {
             <h1 style={{ color: "rgb(210, 103, 9)", fontSize: "35px", margin: "20px" }}>ITEMS</h1>
 
 			<div className ="card-container">
-                    {data.map((cat) => (
-                    <div className ="card" key={cat.url}>
-                    <h3 style={{ color: "gray"}}>Item : {cat.name}</h3>
-                    <p>{cat.email}</p>
-                    <p>{cat.address}</p>
-                  </div>
-                    ))}       
-             
+                    <div className ="card" key={data.url}>
+                    <h3 style={{ color: "gray"}}>Item : {data.name}</h3>
+                    <p>{data.email}</p>
+                    <p>{data.address}</p>
+                  </div>             
 			</div>
             </div>
 		);
